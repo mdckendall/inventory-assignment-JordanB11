@@ -39,23 +39,23 @@ class Main {
     int choice;
     while (true) {
 
-      System.out.println("Press 1 to add an item.");
-      System.out.println("Press 2 to delete an item.");
-      System.out.println("Press 3 to update an item.");
-      System.out.println("Press 4 to show all the item.");
-      System.out.println("Press 5 to quit the program.");
+      System.out.println("Press 1 to add an item. ");
+      System.out.println("Press 2 to delete an item. ");
+      System.out.println("Press 3 to update an item. ");
+      System.out.println("Press 4 to show all the item. ");
+      System.out.println("Press 5 to quit the program. ");
 
       choice = scanner.nextInt();
 
       switch (choice) {
 
         case 1:
-          System.out.println("Enter the name:");
+          System.out.println("Enter the name: ");
           scanner.nextLine();
           String name = scanner.nextLine();
-          System.out.println("Enter the serial number:");
+          System.out.println("Enter the serial number: ");
           String num = scanner.next();
-          System.out.println("Enter the value in dollars (whole number):");
+          System.out.println("Enter the value in dollars (whole number): ");
           int value = scanner.nextInt();
           Inventory inv = new Inventory(name, num, value);
           Total.add(inv);
@@ -64,7 +64,7 @@ class Main {
           break;
 
         case 2:
-          System.out.println("Enter the serial number of the item to delete:");
+          System.out.println("Enter the serial number of the item to delete: ");
           String num1 = scanner.next();
           Iterator itr = Total.iterator();
           while (itr.hasNext()) {
@@ -107,7 +107,7 @@ class Main {
           break; // done
 
         default:
-          System.out.println("Please slelect the options 1 through 5.");
+          System.out.println("Please slelect the options 1 through 5. ");
       }
     }
   }
