@@ -14,7 +14,7 @@ class Inventory {
   }
 
   public String toString() {
-    return name + ", " + num + ", " + value;
+    return name + "," + num + "," + value;
   }
 
   public String getnum() {
